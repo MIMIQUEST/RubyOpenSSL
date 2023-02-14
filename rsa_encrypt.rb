@@ -17,7 +17,7 @@ end
 private_key = OpenSSL::PKey::RSA.generate(2048)
 public_key = private_key.public_key
 
-plain_text = "my message"
+plain_text = "nihao"
 encrypted_text = encrypt_rsa(plain_text, public_key)
 puts "Encrypted text: #{encrypted_text}"
 
