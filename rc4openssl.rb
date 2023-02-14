@@ -8,7 +8,7 @@ def rc4(key, message)
   encrypted.unpack('H*')[0].upcase
 end
 
-key = 'secret_key'
-message = 'my message'
+key = 'key'
+message = 'nihao'
 
 puts rc4(key, message)
